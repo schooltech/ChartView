@@ -49,7 +49,7 @@ public struct LineChartView: View {
             VStack(alignment: .leading){
                 if(!self.showIndicatorDot){
                     VStack(alignment: .leading, spacing: 8){
-                        Text(self.title).font(.title).bold().foregroundColor(self.style.textColor)
+                        Text(self.title).font(.headTitle).bold().foregroundColor(self.style.textColor)
                         if (self.legend != nil){
                             Text(self.legend!).font(.callout).foregroundColor(self.style.legendTextColor)
                         }
